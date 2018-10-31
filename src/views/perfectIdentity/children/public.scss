@@ -1,0 +1,65 @@
+@import "../../../assets/css/mixin";
+
+.title {
+  font-size: 14px;
+  color: #939393;
+  margin: 8px 0 0 15px;
+}
+
+.btn-box {
+  margin: 20px 13px;
+}
+
+.data-box {
+  margin-top: 10px;
+  padding-left: 15px;
+  background: #fff;
+  .sub-item {
+    font-size: 16px;
+    padding: 0px 14px 0px 0;
+    min-height: 55px;
+    @include fja(space-between);
+    input {
+      border: none;
+      flex: 1;
+      font-size: 16px;
+      color: #333;
+      &::placeholder {
+        color: #CCCCCC;
+      }
+    }
+    &.last {
+      align-items: flex-start;
+      padding-top: 16px;
+    }
+    .sub-title {
+      color: #333333;
+      min-width: 68px;
+    }
+    .val-text {
+      padding-left: 30px;
+      flex: 1;
+      @include fja(space-between);
+      .text {
+        font-size: 16px;
+        color: #BDBDBD;
+      }
+      textarea {
+        flex: 1;
+        color: #333333;
+        padding-right: 10px;
+        border: none;
+        font-size: 16px;
+        height: 75px;
+        resize: none;
+        &::placeholder {
+          color: #BDBDBD;
+        }
+      }
+      .xia {
+        @include wh(16px, 10px);
+        @include bg-image('../../../assets/img/mine/xia');
+      }
+    }
+  }
+}
